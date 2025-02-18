@@ -6,6 +6,7 @@ import './styles/global.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { About } from './components/About'
 import { Navbar } from './components/Navbar'
+import { Post } from './components/Post'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,6 +15,8 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/posts/:id' element={<Post/>}/>
+        <Route path='/posts' element={<Post/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>,

@@ -7,6 +7,8 @@ export const Navbar = () => {
       <ul>
         <li><Link to={"/"}>Home</Link></li>
         <li><Link to={"/about"}>Sobre</Link></li>
+        <li><Link to={"/posts"}>Posts</Link></li>
+        <li><Link to={"/posts/10"}>Post</Link></li>
       </ul>
     </nav>
   )
